@@ -1,0 +1,232 @@
+*************************************************************
+Geant4 version Name: geant4-10-02-patch-02 [MT]   (17-June-2016)
+<< in Multi-threaded mode >>
+Copyright : Geant4 Collaboration
+Reference : NIM A 506 (2003), 250-303
+WWW : http://cern.ch/geant4
+*************************************************************
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+PhysicsList::SetCuts:CutLength : 1 um
+### ===  Deexcitation model UAtomDeexcitation is activated for 4 regions:
+DefaultRegionForTheWorld
+Target1
+Target2
+Target3
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+msc:   for e-    SubType= 10
+RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+===== EM models for the G4Region  Target1 ======
+UrbanMsc :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+===== EM models for the G4Region  Target2 ======
+UrbanMsc :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+===== EM models for the G4Region  Target3 ======
+UrbanMsc :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+eIoni:   for  e-    SubType= 2
+dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+MollerBhabha :  Emin=    99.99 MeV   Emax=       10 TeV
+===== EM models for the G4Region  Target2 ======
+MollerBhabha :  Emin=    99.99 MeV   Emax=       10 TeV
+===== EM models for the G4Region  Target3 ======
+MollerBhabha :  Emin=    99.99 MeV   Emax=       10 TeV
+e-_G4MicroElecElastic:   for  e-    SubType= 51  BuildTable= 0
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DummyModel :  Emin=        0 eV    Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+MicroElecElasticModel :  Emin=        0 eV    Emax=      100 MeV
+===== EM models for the G4Region  Target2 ======
+MicroElecElasticModel :  Emin=        0 eV    Emax=      100 MeV
+===== EM models for the G4Region  Target3 ======
+MicroElecElasticModel :  Emin=        0 eV    Emax=      100 MeV
+e-_G4MicroElecInelastic:   for  e-    SubType= 53  BuildTable= 0
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DummyModel :  Emin=        0 eV    Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=      100 MeV   deltaVI  FluoActive
+===== EM models for the G4Region  Target2 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=      100 MeV   deltaVI  FluoActive
+===== EM models for the G4Region  Target3 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=      100 MeV   deltaVI  FluoActive
+#### G4VUserPhysicsList::BuildPhysicsTable() - BuildPhysicsTable(proton) skipped...
+msc:   for GenericIon    SubType= 10
+RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+UrbanMsc :  Emin=        0 eV    Emax=       10 TeV
+ionIoni:   for  GenericIon    SubType= 2
+dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+Stopping Power data for 17 ion/material pairs
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+BraggIon :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+BraggIon :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+===== EM models for the G4Region  Target2 ======
+BraggIon :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+===== EM models for the G4Region  Target3 ======
+BraggIon :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+ion_G4MicroElecInelastic:   for  GenericIon    SubType= 53  BuildTable= 0
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DummyModel :  Emin=        0 eV    Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=       10 GeV   deltaVI  FluoActive
+===== EM models for the G4Region  Target2 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=       10 GeV   deltaVI  FluoActive
+===== EM models for the G4Region  Target3 ======
+MicroElecInelasticModel :  Emin=        0 eV    Emax=       10 GeV   deltaVI  FluoActive
+msc:   for pi+    SubType= 10
+RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+hIoni:   for  pi+    SubType= 2
+dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+===== EM models for the G4Region  DefaultRegionForTheWorld ======
+Bragg :  Emin=        0 eV    Emax=  297.505 keV
+BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+===== EM models for the G4Region  Target1 ======
+Bragg :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+===== EM models for the G4Region  Target2 ======
+Bragg :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+===== EM models for the G4Region  Target3 ======
+Bragg :  Emin=        0 eV    Emax=        2 MeV
+BetheBloch :  Emin=      990 MeV   Emax=      100 GeV
+G4VDecayChannel::FillDaughters  [ pi+ ]0:mu+ is not defined !!
+The BR of this decay mode is set to zero
+G4WT0 >
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >  Local thread RunManagerKernel version Name: geant4-10-02-patch-02 [MT]
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >
+G4WT1 >
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 >  Local thread RunManagerKernel version Name: geant4-10-02-patch-02 [MT]
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 >
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : PART10116
+      issued by : G4ParticleDefintion::SetProcessManager
+ProcessManager is being set to proton without proper initialization of TLS pointer vector.
+This operation is thread-unsafe.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+G4WT0 >
+G4WT1 >
+G4WT1 > ### === G4UAtomicDeexcitation::InitialiseForNewRun()
+G4WT0 > ### === G4UAtomicDeexcitation::InitialiseForNewRun()
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+RayTracerX (RayTracerX)
+Registering model factories...
+You have successfully registered the following model factories.
+Registered model factories:
+generic
+drawByCharge
+drawByParticleID
+drawByOriginVolume
+drawByAttribute
+Registered filter factories:
+chargeFilter
+particleFilter
+originVolumeFilter
+attributeFilter
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+Visualization verbosity changed to errors (2)
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+Visualization verbosity changed to warnings (3)
+========= Table of registered couples ==============================
+Index : 0     used in the geometry : Yes
+Material : G4_N
+Range cuts        :  gamma  1 um     e-  1 um     e+  1 um  proton 1 um
+Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 eV
+Region(s) which use this couple :
+DefaultRegionForTheWorld
+Index : 1     used in the geometry : Yes
+Material : G4_Be
+Range cuts        :  gamma  1 nm     e-  1 nm     e+  1 nm  proton 0 fm
+Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 0 eV
+Region(s) which use this couple :
+Target1
+Index : 2     used in the geometry : Yes
+Material : G4_Si
+Range cuts        :  gamma  1 nm     e-  1 nm     e+  1 nm  proton 0 fm
+Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 0 eV
+Region(s) which use this couple :
+Target2
+Target3
+====================================================================
+G4WT0 > ##### Create analysis manager   0x7fe1d40bf210
+G4WT1 > ##### Create analysis manager   0x7fe1cc0c0470
+G4WT0 > Using Root analysis manager
+G4WT1 > Using Root analysis manager
+G4WT0 > ... open Root analysis file : geometryTest_t0.root - done
+G4WT1 > ... open Root analysis file : geometryTest_t1.root - done
+G4WT0 > ... write Root file : geometryTest_t0.root - done
+G4VIS > G4VisManager: Using G4TrajectoryDrawByCharge as default trajectory model.
+G4VIS > See commands in /vis/modeling/trajectories/ for other options.
+G4WT0 > ... close Root file : geometryTest_t0.root - done
+G4WT0 > Number and type of particles created in region "World" :
+G4WT0 > _______________________
+G4WT0 > Number and type of particles created in region "Target1" :
+G4WT0 > Number and type of particles created in region "Target2" :
+G4WT0 > Number and type of particles created in region "Target3" :
+WARNING: 10 events have been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them.
