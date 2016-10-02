@@ -1,0 +1,19 @@
+#can be run 
+#  - in command line passing as first argument
+#  - interactively with/control/execute macros/run1.mac
+
+#verbosity
+/control/verbose 0
+/control/saveHistory
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+#particle gun
+#/gun/particle geantino 
+/gun/particle pi+
+/gun/energy 120 GeV
+#/gun/direction 1 0 0
+
+#events
+/run/beamOn 10
